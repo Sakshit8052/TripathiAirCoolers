@@ -1,305 +1,47 @@
-/* ================= General ================= */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f5f5f5;
-    color: #333;
-    line-height: 1.6;
-}
-
-/* Links & Buttons */
-a {
-    text-decoration: none;
-}
-.btn {
-    display: inline-block;
-    background: #0077cc;
-    color: #fff;
-    padding: 10px 20px;
-    font-weight: bold;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-.btn:hover {
-    background: #005fa3;
-}
-
-/* ================= Header / Navbar ================= */
-.navbar {
-    background: #0077cc;
-    color: #fff;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.navbar h1 span {
-    color: #ffcc00;
-}
-.navbar nav a {
-    color: #fff;
-    margin-left: 20px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-.navbar nav a:hover {
-    color: #ffcc00;
-}
-
-/* ================= Hero Section ================= */
-.hero {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+/* ================= Enquiry Section ================= */
+.enquiry {
     padding: 60px 20px;
-    background: linear-gradient(90deg, #e0f7fa, #b2ebf2);
-    flex-wrap: wrap;
+    background: #f0f8ff;
+    text-align: center;
 }
-.hero-text {
+.enquiry h2 {
+    color: #0077cc;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.enquiry form {
     max-width: 500px;
-}
-.hero-text h2 {
-    font-size: 42px;
-    margin-bottom: 20px;
-    color: #0077cc;
-}
-.hero-text p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-.hero-image img {
-    max-width: 400px;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    transition: transform 0.3s;
-}
-.hero-image img:hover {
-    transform: scale(1.05);
-}
-
-/* ================= About Section ================= */
-.about {
-    padding: 60px 20px;
-    text-align: center;
-    background: #fff;
-}
-.about h2 {
-    font-size: 32px;
-    color: #0077cc;
-    margin-bottom: 20px;
-}
-.about p {
-    max-width: 700px;
     margin: 0 auto;
-    font-size: 16px;
-}
-
-/* ================= Features Section ================= */
-.features {
-    text-align: center;
-    padding: 60px 20px;
-    background: #f0f8ff;
-}
-.features h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #0077cc;
-}
-.feature-cards {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
-.card {
-    background: #fff;
-    padding: 20px;
-    margin: 15px;
-    border-radius: 15px;
-    width: 250px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 20px rgba(0,0,0,0.25);
-}
-.card h3 {
-    color: #0077cc;
-    margin-bottom: 15px;
-}
-.card p {
+.enquiry input, .enquiry select, .enquiry textarea {
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
     font-size: 14px;
 }
-
-/* ================= Models Preview ================= */
-.models-preview {
-    padding: 60px 20px;
-    background: #fff;
-    text-align: center;
-}
-.models-preview h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: #0077cc;
-}
-.model-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.model-card {
-    background: #f0f8ff;
-    margin: 15px;
-    border-radius: 15px;
-    width: 250px;
-    padding: 15px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.model-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 20px rgba(0,0,0,0.25);
-}
-.model-card img {
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-.model-card h3 {
-    color: #0077cc;
-    margin-bottom: 10px;
-}
-.model-card p {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-/* ================= Testimonials ================= */
-.testimonials {
-    background: #e0f7fa;
-    padding: 60px 20px;
-    text-align: center;
-}
-.testimonials h2 {
-    color: #0077cc;
-    font-size: 32px;
-    margin-bottom: 40px;
-}
-.testimonial-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.testimonial-card {
-    background: #fff;
-    margin: 15px;
-    padding: 20px;
-    border-radius: 15px;
-    width: 250px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.testimonial-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 20px rgba(0,0,0,0.25);
-}
-.testimonial-card p {
-    font-style: italic;
-    margin-bottom: 15px;
-}
-.testimonial-card h4 {
-    color: #0077cc;
-}
-
-/* ================= Footer ================= */
-footer {
-    text-align: center;
+.enquiry button {
+    margin-top: 10px;
     background: #0077cc;
     color: white;
-    padding: 20px;
-    font-size: 14px;
-}
-
-/* ================= Responsive ================= */
-@media (max-width: 900px) {
-    .hero {
-        flex-direction: column;
-    }
-    .hero-image img {
-        max-width: 300px;
-    }
-    .feature-cards, .model-cards, .testimonial-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-/* ================= Models Page ================= */
-.page-title {
-    text-align: center;
-    margin: 40px 0 20px;
-    font-size: 32px;
-    color: #0077cc;
-}
-
-.models {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 20px;
-}
-.model-card {
-    background: #f0f8ff;
-    margin: 15px;
-    border-radius: 15px;
-    width: 260px;
-    padding: 15px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
-}
-.model-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 20px rgba(0,0,0,0.25);
-}
-.model-card img {
-    width: 100%;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-.model-card h3 {
-    color: #0077cc;
-    margin-bottom: 5px;
-}
-.model-card p {
-    font-size: 14px;
-    margin-bottom: 10px;
-}
-.model-card button {
-    background: #0077cc;
-    color: white;
-    padding: 8px 15px;
     border: none;
+    padding: 12px;
+    font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
 }
-.model-card button:hover {
+.enquiry button:hover {
     background: #005fa3;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-    .models {
-        flex-direction: column;
-        align-items: center;
-    }
+/* ================= Footer Social Links ================= */
+footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    transition: 0.3s;
 }
-
-
-
-
-
+footer .social-links a:hover {
+    color: #ffcc00;
+}
